@@ -1,0 +1,36 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Badge from "../components/Badge.astro";
+import Linkedin from "../components/icons/Linkedin.astro";
+import SocialPill from "../components/SocialPill.astro";
+---
+
+<Layout title='Portfolio'>
+  <main>
+    <section class='w-full lg:w-[740px] mx-auto py-44'>
+      <h1 class='text-white text-5xl font-bold flex flex-row gap-x-4 pb-10'>
+        Hey I am Eva <a
+          href='www.linkedin.com/in/eva-cebrian-dev'
+          target='_blank'
+          rel='noopener'
+          class='flex justify-center items-center'
+        >
+          <Badge>disponible para trabajar</Badge></a
+        >
+      </h1>
+      <h2 class='text-2xl text-wrap'>
+        <span>Autoaprendizaje, desarrollo web y diseñadora de contenido.</span>
+        <span class='opacity-80'
+          >De Zaragoza, especialista en encontrar soluciones dinámicas y
+          originales.</span
+        >
+      </h2>
+      <nav class='Flex gap-x-2'>
+        <SocialPill>
+          <Linkedin class='w-6 h-6' /> LinkedIn
+        </SocialPill>
+      </nav>
+    </section>
+  </main>
+</Layout>
