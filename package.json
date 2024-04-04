@@ -1,5 +1,4 @@
 {
-  "homepage": "",
   "name": "portfolio-eva",
   "type": "module",
   "version": "0.0.1",
@@ -8,9 +7,7 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "astro": "astro"
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.1.0",
