@@ -2,13 +2,20 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Badge from "../components/Badge.astro";
-import Linkedin from "../components/icons/Linkedin.astro";
+import Linkedin from "../components/icons/LinkedinIcon.astro";
 import SocialPill from "../components/SocialPill.astro";
+import LinkedinIcon from "../components/icons/LinkedinIcon.astro";
+import GitHubIcon from "../components/icons/GitHubIcon.astro";
+import MailIcon from "../components/icons/MailIcon.astro";
+import Experience from "../components/Experience.astro";
 ---
 
-<Layout title='Portfolio'>
+<Layout
+  title='Portfolio de Eva'
+  desciption='Portfolio de Eva con info interesante'
+>
   <main>
-    <section class='w-full lg:w-[740px] mx-auto py-44'>
+    <section class='w-full lg:w-[740px] mx-auto py-40 pb-30'>
       <h1 class='text-white text-5xl font-bold flex flex-row gap-x-4 pb-10'>
         Hey I am Eva <a
           href='www.linkedin.com/in/eva-cebrian-dev'
@@ -26,11 +33,23 @@ import SocialPill from "../components/SocialPill.astro";
           originales.</span
         >
       </h2>
-      <nav class='Flex gap-x-2'>
-        <SocialPill>
-          <Linkedin class='w-6 h-6' /> LinkedIn
+      <nav class='flex flex-row gap-x-2'>
+        <SocialPill href='https://www.linkedin.com/in/eva-cebrian-dev/'>
+          <LinkedinIcon class='w-6 h-6' /> LinkedIn
+        </SocialPill>
+
+        <SocialPill href='https://github.com/Eva-Cebrian'>
+          <GitHubIcon class='w-6 h-6' /> GitHub
+        </SocialPill>
+
+        <SocialPill href='https://github.com/Eva-Cebrian'>
+          <MailIcon class='w-6 h-6' /> Mail
         </SocialPill>
       </nav>
+    </section>
+    <section class='w-full lg:w-[740px] mx-auto py-1'>
+      <h2 class='text-2xl font-semibold mb-6'>Formacion</h2>
+      <Experience />
     </section>
   </main>
 </Layout>
