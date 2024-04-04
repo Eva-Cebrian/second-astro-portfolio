@@ -1,5 +1,6 @@
 {
-  "name": "portfolio-midu",
+  "homepage": "",
+  "name": "portfolio-eva",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -7,12 +8,15 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource-variable/onest": "^5.0.3",
     "astro": "^4.5.13",
+    "gh-pages": "^6.1.1",
     "tailwindcss": "^3.4.3"
   }
 }
