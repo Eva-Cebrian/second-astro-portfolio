@@ -4,6 +4,6 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://Eva-Cebrian.github.io',
+  site: 'https://eva-cebrian.github.io',
   integrations: [tailwind()]
 });
